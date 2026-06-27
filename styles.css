@@ -940,48 +940,6 @@ img {
     line-height: 1.8;
 }
 
-/* ===================== TESTIMONIALS ===================== */
-
-.testimonials {
-    padding: 110px 0;
-    background: var(--light);
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    margin-top: 60px;
-}
-
-.testimonial-card {
-    background: var(--white);
-    padding: 0;
-    border-radius: var(--radius);
-    transition: var(--transition);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
-
-.testimonial-card:hover {
-    transform: scale(1.04);
-    box-shadow: var(--shadow);
-}
-
-.testimonial-card:nth-child(even) {
-    transform: translateY(20px);
-}
-
-.testimonial-card:nth-child(even):hover {
-    transform: translateY(20px) scale(1.04);
-}
-
-.testimonial-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* ===================== SEO CONTENT ===================== */
 
 .seo-content {
@@ -1349,30 +1307,6 @@ img {
         padding: 12px 0;
     }
 
-    .testimonials {
-        padding: 60px 0;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 30px;
-    }
-
-    .testimonial-card:nth-child(even) {
-        transform: none;
-    }
-
-    .testimonial-card:nth-child(even):hover {
-        transform: scale(1.04);
-    }
-
-    .testimonial-card:nth-child(5) {
-        grid-column: 1 / -1;
-        max-width: 50%;
-        margin: 0 auto;
-    }
-
     .faq {
         padding: 60px 0;
     }
@@ -1444,7 +1378,6 @@ img {
     .how-it-works,
     .services,
     .pricing,
-    .testimonials,
     .faq {
         padding: 40px 0;
     }
@@ -1455,9 +1388,5 @@ img {
 
     .section-title {
         font-size: 23px;
-    }
-
-    .testimonial-card:nth-child(5) {
-        max-width: 100%;
     }
 }
