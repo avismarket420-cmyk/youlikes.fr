@@ -664,15 +664,17 @@ img {
     padding: 38px 30px;
     text-align: center;
     transition: var(--transition);
-    border: 1px solid var(--gray-light);
+    border: 1px solid var(--accent);
+    box-shadow: var(--shadow);
+    transform: translateY(-8px);
     display: flex;
     flex-direction: column;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow);
-    border-color: var(--accent);
+    transform: translateY(0);
+    box-shadow: none;
+    border-color: var(--gray-light);
 }
 
 .service-icon {
@@ -748,8 +750,9 @@ img {
     background: var(--white);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    border: 1px solid var(--gray-light);
-    box-shadow: 0 10px 40px rgba(15, 15, 15, 0.06);
+    border: 1px solid var(--accent);
+    box-shadow: 0 25px 60px rgba(255, 0, 0, 0.14);
+    transform: translateY(-8px);
     transition: var(--transition);
     position: relative;
     display: flex;
@@ -757,20 +760,20 @@ img {
 }
 
 .pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 60px rgba(255, 0, 0, 0.14);
-    border-color: var(--accent);
+    transform: translateY(0);
+    box-shadow: 0 10px 40px rgba(15, 15, 15, 0.06);
+    border-color: var(--gray-light);
 }
 
 .pricing-card.featured {
-    transform: scale(1.04);
+    transform: scale(1.04) translateY(-8px);
     background: var(--white);
     border-color: var(--accent);
     box-shadow: 0 15px 50px rgba(255, 0, 0, 0.16);
 }
 
 .pricing-card.featured:hover {
-    transform: scale(1.04) translateY(-8px);
+    transform: scale(1.04) translateY(0);
 }
 
 .pricing-badge {
